@@ -12,10 +12,43 @@
 
 const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
 
-for(i = 0; i < arrayOriginal.length; i++){
-    console.log(arrayOriginal[i])
-}
+// for(i = 0; i < arrayOriginal.length; i++){
+//     console.log(arrayOriginal[i])
+// }
+
+
+// for(i = 0; i < arrayOriginal.length; i++){
+//     console.log(arrayOriginal[i] / 10)
+// }
+
+
+// let novoArray = []
+// for(let i = 0; i < arrayOriginal.length; i++) {
+//      if (arrayOriginal[i] % 2 == 0) {
+//         novoArray.push(arrayOriginal[i])
+//      }
+// }
+// console.log(novoArray)
+
+
+// let array = []
+// for(let i = 0; i < arrayOriginal.length; i++){
+//     console.log([`O elemento do Index ${i} é: ${arrayOriginal[i]}`])
+// }
+
+let maior = arrayOriginal[0]
+let menor = arrayOriginal[0]
 
 for(i = 0; i < arrayOriginal.length; i++){
-    console.log(arrayOriginal[i] / 10)
+    if(arrayOriginal[i] > maior){
+        maior = arrayOriginal[i]
+    }
 }
+console.log(maior)
+
+for(i = 0; i < arrayOriginal.length; i++){
+    if(arrayOriginal[i] < menor){
+        menor = arrayOriginal[i]
+    }
+}
+console.log(menor)
